@@ -1,0 +1,25 @@
+.verify {
+    min-height: 60vh;
+    display: flex; /* Grid yerine Flex kullanarak ortalamayı kolaylaştırabiliriz */
+    justify-content: center; /* Yatayda ortalar */
+    align-items: center; /* Düşeyde ortalar */
+    background-color: #f0f0f0; /* Arka plan rengi */
+}
+
+.verify .spinner {
+    width: 120px; /* Daha büyük bir spinner */
+    height: 120px;
+    border: 8px solid #bdbdbd; /* Daha kalın bir border */
+    border-top-color: tomato;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
